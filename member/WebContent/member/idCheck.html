@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = function(){
+	var id = document.getElementById('id');
+	
+	var request = new XMLHttpRequest();
+	request.open('post', 'idCheck.do');
+	
+	request.onreadystatechange = function(){
+		if(request.readyState==4 && request.status==200){
+			
+		}
+	};
+	request.send();
+};
+</script>
+</head>
+<body>
+
+</body>
+</html>

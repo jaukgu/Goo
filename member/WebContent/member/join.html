@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+	<style type="text/css">
+	h4{
+		text-align: center;
+		font-weight: bold;
+
+	}
+	body{background-color: #f7f6f4;}
+
+	#main_header{
+		width: 700px;
+		margin : 0 auto;
+		/* position: relative; */
+	}
+	#main_header >#title{
+		/* position: absolute; */
+		/* left: 20px; top:30px;*/
+		margin: 30px auto;
+		text-align: center;
+	}
+	#join_content {
+		margin : 0 auto;
+		position: relative;
+		width: 700px;
+		height: 700px;
+		overflow: hidden;
+
+	}
+	#join_content > #input_form{
+		
+		text-align: left;
+		position: absolute;
+		height: 800px;
+		width: 680px;
+		margin: 0 auto ;
+		padding: 10px;
+	}
+	#join_content > #input_form input[type = text]{
+		width:500px;
+		height: 50px;
+		padding: 10px;
+		margin: 4px;
+		border-style: none;
+	}
+	#join_content > #input_form input[type = password]{
+		width:500px;
+		height: 50px;
+		padding: 10px;
+		margin: 4px;
+		border-style: none;
+	}
+
+	#join_content > #input_form > #main_info {
+		width:550px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		background: white;
+	}
+
+	#join_content > #input_form > #sub_info{
+		width:550px;
+		margin: 0 auto;
+		background: white;
+	}
+	#join_content > #input_form > #button_div{
+		width:300px;
+		height:50px;
+		margin: 0 auto;
+		margin-top: 30px;
+		text-align: center;
+	}
+	
+
+	#join_content > #input_form > #sub_info > #genre_check{
+		background-color: white;
+		color:#75758A;
+		height:50px;
+		text-align: center;
+	}
+
+	#border-c{		
+		border-color: lightgray;
+		border-style: solid;	
+		border-width: thin;
+		background: white;
+	}
+	#border-c > #genre_check{
+		height:50px;
+		padding :13px 0;
+		text-align: center;
+	}
+	.btn{
+		background: white;
+		border-color: lightgray;
+		border-width: thin;
+	}
+</style>
+<script type="text/javascript">
+
+</script>
+
+</head>
+<body>
+	<header id = "main_header">
+		<div id = "title">
+			<h2>Goo Movie Select</h2>
+		</div>
+	</header>
+	<div id = "join_content">
+		<h4>회원가입</h4>
+		<div id = "input_form">
+			<div id = "main_info">
+				<div id = "border-c">
+					<span>
+						<input type = "text" id = "name" placeholder="아이디" >
+					</span>
+					<span>
+						<i class = "glyphicon glyphicon-ok"></i>
+					</span>
+				</div>
+				<div id = "border-c">
+					<input type = "password" id = "name" placeholder="비밀번호">
+					<span>
+						<i class = "glyphicon glyphicon-lock"></i>
+					</span>
+				</div>
+				<div id = "border-c">
+					<input type = "password" id = "name" placeholder="비밀번호 재확인">
+				</div>
+			</div>
+			<div id = "sub_info">
+				<div  id = "border-c">
+					<input type = "text" id = "name" placeholder="SNS" style = "margin-top:10px">
+					<span>
+						<i class = "glyphicon glyphicon-phone"></i>
+					</span>
+				</div>
+				<div id = "border-c">
+					<input type = "text" id = "name" placeholder="이메일(goo@goo.com)">
+					<span>
+						<i class = "glyphicon glyphicon-envelope"></i>
+					</span>
+				</div>
+				<div  id = "border-c">
+					<div id = "genre_check">
+						
+						관심분야&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type = "checkbox" id = "genre"> &nbsp;SF&nbsp;&nbsp;
+						<input type = "checkbox" id = "genre"> &nbsp;공포&nbsp;&nbsp;
+						<input type = "checkbox" id = "genre"> &nbsp;로맨스&nbsp;&nbsp;
+						<input type = "checkbox" id = "genre"> &nbsp;멜로&nbsp;&nbsp;
+						<input type = "checkbox" id = "genre"> &nbsp;뮤지컬&nbsp;&nbsp;
+						<input type = "checkbox" id = "genre"> &nbsp;범죄&nbsp;&nbsp;
+						<input type = "checkbox" id = "genre"> &nbsp;&nbsp;전쟁
+						
+					</div>
+				</div>
+			</div>
+			<div id = "button_div">
+				<input type = "button" class = "btn" value = "회원가입">
+				<input type = "reset" class = "btn" value = "다시쓰기">
+				<input type = "button" class = "btn" value = "메인으로">
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
